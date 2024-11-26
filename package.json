@@ -5,11 +5,21 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nest start --watch"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "knex": "^2.5.1",
-    "mysql2": "^3.5.2"
+    "@nestjs/common": "^10.4.9",
+    "@nestjs/core": "^10.4.9",
+    "@nestjs/platform-express": "^10.4.9",
+    "@prisma/client": "^5.22.0",
+    "mysql2": "^3.5.2",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "prisma": "^5.22.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
   }
 }
