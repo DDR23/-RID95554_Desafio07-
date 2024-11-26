@@ -1,4 +1,4 @@
-import { Inject, Injectable } from '@nestjs/common';
+import { BadRequestException, Inject, Injectable } from '@nestjs/common';
 import { ALUNO_SERVICE_TOKEN } from '../utils/alunosServiceToken';
 import { CreateAlunoDto } from '../domain/dto/create-aluno.dto';
 import { Aluno } from '@prisma/client';
@@ -12,7 +12,8 @@ export class CreateAlunoService {
   ) { }
 
   async execute(data: CreateAlunoDto): Promise<Aluno> {
-    // TODO - adicionar verificação de existecia de aluno
+    const existeAluno = await this.alunoRepositories.findAlunoByCpf(data.ALUNO_CPF);
+    if (existeAluno) throw new BadRequestException('Já existe um aluno cadastrado com esse CPF');
     return await this.alunoRepositories.createAluno(data);
   }
 }
