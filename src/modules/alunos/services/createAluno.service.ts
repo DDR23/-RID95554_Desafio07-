@@ -1,8 +1,8 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { IAlunoRepositories } from '../domain/repositories/IAlunosRepositories';
 import { ALUNO_SERVICE_TOKEN } from '../utils/alunosServiceToken';
 import { CreateAlunoDto } from '../domain/dto/create-aluno.dto';
 import { Aluno } from '@prisma/client';
+import { IAlunoRepositories } from '../domain/repositories/IAluno.Repositories';
 
 @Injectable()
 export class CreateAlunoService {
