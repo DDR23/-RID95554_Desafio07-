@@ -5,6 +5,7 @@ import { ALUNO_SERVICE_TOKEN } from './utils/alunosServiceToken';
 import { AlunoRepository } from './infra/alunos.repository';
 import { PrismaModule } from '../prisma/prisma.module';
 import { FindAlunoByCpfService } from './services/findAlunoByCpf.service';
+import { FindAlunosService } from './services/findAlunos.service';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { FindAlunoByCpfService } from './services/findAlunoByCpf.service';
   providers: [
     CreateAlunoService,
     FindAlunoByCpfService,
+    FindAlunosService,
     {
       provide: ALUNO_SERVICE_TOKEN,
       useClass: AlunoRepository,

@@ -17,4 +17,8 @@ export class AlunoRepository implements IAlunoRepositories {
   findAlunoByCpf(data: string): Promise<Aluno> {
     return this.prisma.aluno.findUnique({ where: { ALUNO_CPF: data } });
   }
+
+  findAlunos(): Promise<Aluno[]> {
+    return this.prisma.aluno.findMany();
+  }
 }
