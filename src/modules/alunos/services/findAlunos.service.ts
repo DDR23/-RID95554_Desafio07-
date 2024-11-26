@@ -12,7 +12,7 @@ export class FindAlunosService {
 
   async execute(): Promise<Aluno[]> {
     const alunos = await this.alunoRepositories.findAlunos();
-    if (!alunos) throw new NotFoundException('Não existem alunos cadastrados');
+    if (alunos.length < 1) throw new NotFoundException('Não existem alunos cadastrados');
     return alunos;
   }
 }
