@@ -98,6 +98,8 @@ Comandos para clonar esse projeto.
 ```
 - Adicione o arquivo `.env`.
 
+<a id="dotenv"></a>
+
 ```
 DATABASE_URL="postgresql://<POSTGRES_USER>:<POSTGRES_PASSWORD>@localhost:5432/<POSTGRES_DB>?schema=public"
 ```
@@ -123,7 +125,6 @@ DATABASE_URL="postgresql://<POSTGRES_USER>:<POSTGRES_PASSWORD>@localhost:5432/<P
 
 ## Funcionalidades
 
-[/ALUNOS](#alunos)
 - `/alunos/create` Cadastra um novo aluno, com CPF unico.
 - `/alunos/:cpf` Retorna o aluno pelo CPF.
 - `/alunos` Retorna todos os alunos cadastrados.
@@ -132,9 +133,6 @@ DATABASE_URL="postgresql://<POSTGRES_USER>:<POSTGRES_PASSWORD>@localhost:5432/<P
 <a id="exemplos"></a>
 
 ## Exemplos de uso
-
-&nbsp;
-<a id='alunos'></a>
 
 ### /alunos/create
 
@@ -184,5 +182,5 @@ npm run test:e2e
 
 #### Testes unitários:
 ```bash
-npx jest src/modules/alunos/services/<NomeDoArquivo>.service.spec.ts
+npx jest src/modules/alunos/services/<NomeDoArquivo.service.spec.ts>
 ```
