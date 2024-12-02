@@ -11,7 +11,7 @@ export class AlunoRepository implements IAlunoRepositories {
   ) { }
 
   createAluno(data: CreateAlunoDto): Promise<Aluno> {
-    return this.prisma.aluno.create({ data });
+    return this.prisma.aluno.create({ data })
   }
 
   findAlunoByCpf(data: string): Promise<Aluno> {
