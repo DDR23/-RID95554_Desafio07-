@@ -1,4 +1,4 @@
-import { BadRequestException, ConflictException, Inject, Injectable } from '@nestjs/common';
+import { ConflictException, Inject, Injectable } from '@nestjs/common';
 import { ALUNO_SERVICE_TOKEN } from '../utils/alunosServiceToken';
 import { CreateAlunoDto } from '../domain/dto/create-aluno.dto';
 import { Aluno } from '@prisma/client';
