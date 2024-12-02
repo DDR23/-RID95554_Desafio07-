@@ -7,7 +7,6 @@ Nesse `README.dm` é possivel encontrar informações sobre:
 - [Tecnologias usadas](#tecnologias)
 - [Banco de dados](#banco)
 - [Instalações](#instalacoes)
-- [Variavéis de ambiente](#dotenv)
 - [Funcionalidades](#funcionalidades)
 - [Exemplos de uso](#exemplos)
 - [Testes](#testes)
