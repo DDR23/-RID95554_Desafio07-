@@ -100,7 +100,7 @@ Comandos para clonar esse projeto.
 <a id="dotenv"></a>
 
 ```
-DATABASE_URL="postgresql://<POSTGRES_USER>:<POSTGRES_PASSWORD>@localhost:5432/<POSTGRES_DB>?schema=public"
+DATABASE_URL="postgresql://desafio-07:desafio-07@localhost:5432/desafio-07-db-v1?schema=public"
 ```
 
 - Dentro do repositorio execute:
